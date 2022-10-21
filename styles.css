@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1 {
+  font-size: 562.5%;
+  margin: 50px auto 0;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+hr {
+  border-style: dotted none none;
+  border-color: #79bac1;
+  border-width: 5px;
+  height: 1px;
+  width: 5%;
+}
+.contact-me {
+  width: 50%;
+  margin: 100px auto 100px;
+  line-height: 2;
+}
+.bttn {
+  margin-top: 20PX;
+  background: linear-gradient(to bottom, #5ebabd 5%, #409996 100%);
+  background-color: #5ebabd;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #3d768a;
+}
+
+.bttn:hover {
+  background: linear-gradient(to bottom, #409996 5%, #5ebabd 100%);
+  background-color: #409996;
+}
