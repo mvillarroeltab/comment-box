@@ -30,6 +30,9 @@ hr {
   height: 1px;
   width: 5%;
 }
+.form{
+  text-align: left;
+}
 .contact-me {
   width: 50%;
   margin: 100px auto 100px;
