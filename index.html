@@ -16,15 +16,21 @@
       <h3>I am currently available for freelance work.</h3>
       <p>So if you want to contact me, please get in touch by leaving your details and comments below.</p>
       <hr>
-      <form class="form">
-       <label for="name">Name:</label><br>
-       <input type="text" id="name" name="name"><br>
-       <label for="email">Email address:</label><br>
+      <form id="form" method="post">
+        <ul class="form-wrapper">
+       <li class="row"><label for="name">Name:</label><br>
+       <input type="text" id="name" name="name">
+          </li><br>
+       <li class="row"><label for="email">Email address:</label><br>
        <input type="email" id="email" name="email"><br>
+         </li>
        <br>
-       <label for="comment">Leave your comment: </label><br>
-       <input type="text" id="comment" name="comment"><br>
-       <input type="submit" class="bttn" value="Submit">
+       <li class="row"><label for="comment">Leave your comment: </label><br>
+       <input type="text" id="comment" name="comment">
+         </li><br>
+       <li class="row"><input type="submit" class="bttn" value="Submit">
+          </li>
+        </ul>
       </form>
       <a href="mailto:name@gmail.com" class="bttn">CONTACT ME</a>
     </div>
