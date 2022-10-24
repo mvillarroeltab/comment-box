@@ -30,10 +30,7 @@ hr {
   height: 1px;
   width: 5%;
 }
-form{
-  width: 80%;
-  margin: 0 auto;
-}
+
 label,
 input {
   /* In order to define widths */
@@ -42,6 +39,10 @@ label{
    text-align: left;
    width: 30%
    margin: 0 30% 0 4%;
+}
+.form{
+  width: 80%;
+  margin: 0 auto;
 }
 
 .contact-me {
