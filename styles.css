@@ -36,7 +36,12 @@ hr {
   margin: 100px auto 100px;
   line-height: 2;
 }
+.your-comments {
+  text-align: left;
+  line-height: 1;
+}
 .form-wrapper {
+    text-align: left;
     background-color: whitesmoke;
     list-style-type: none;
     padding: 0;
@@ -44,27 +49,36 @@ hr {
   }
 .row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: .5em;
   }
 .row > label {
-    padding: .5em 1em .5em 0;
+    padding: .5em 2em .5em 0;
     flex: 1;
   }
 .row > input {
     flex: 2;
   }
+
+.row-count {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1px auto 1px;
+      padding: 0;
+      line-height: 0.5;
+    }
+.row-count > p{
+  font-size: 75%;
+}
 .row > input,
 .row > button {
     padding: .5em;
   }
-.row > button {
-   background: gray;
-   color: white;
-   border: 0;
-  }
+.redComment {
+  color: red;
+}
+
 .bttn {
-  outline: none;
   margin-top: 20PX;
   background: linear-gradient(to bottom, #5ebabd 5%, #409996 100%);
   background-color: #5ebabd;
@@ -78,7 +92,7 @@ hr {
   padding: 13px 32px;
   text-decoration: none;
   text-shadow: 0 1px 0 #3d768a;
-  width: 250px;
+  max-width: 100px;
 }
 
 .bttn:hover {

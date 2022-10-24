@@ -7,9 +7,10 @@
   <link rel="stylesheet" href="./styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <div>
-     
+
 
     <div class="contact-me">
       <h2 style="line-height: 2;">Get In Touch</h2>
@@ -18,22 +19,42 @@
       <hr>
       <form id="form" method="post">
         <ul class="form-wrapper">
-       <li class="row"><label for="name">Name:</label>
-       <input type="text" id="name" name="name">
+          <li class="row"><label for="name">Name:</label>
+            <input type="text" id="name" name="name">
           </li>
-       <li class="row"><label for="email">Email address:</label>
-       <input type="email" id="email" name="email">
-         </li>
-       <br>
-       <li class="row"><label for="comment">Leave your comment: </label>
-       <input type="text" id="comment" name="comment">
-         </li>
-       <li class="row"><input type="submit" class="bttn" value="Submit">
+          <li class="row"><label for="email">Email address:</label>
+            <input type="email" id="email" name="email">
+          </li>
+
+          <li class="row"><label for="comment">Leave your comment: </label>
+            <input type="text" id="comment" name="comment">
+          </li>
+          <li class="row-count">
+            <label for="Number of characters"></label>
+            <p id="number">
+            </p>
+          </li>
+          <li class="row-count">
+            <label for="Character count"></label>
+            <p id="count">
+            </p>
+          </li>
+
+          </li>
+          <li class="row"><button id= "bttn" type="submit" class="bttn">Submit</button>
           </li>
         </ul>
       </form>
-      <a href="mailto:name@gmail.com" class="bttn">CONTACT ME</a>
+      <hr>
+      <div class = "your-comments">
+        <h3>Comments</h3>
+        <div id="c">
+
+        </div>
+      </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
