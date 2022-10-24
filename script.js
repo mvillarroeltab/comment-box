@@ -4,6 +4,7 @@ let Comment2 = document.getElementById('comment');
 let Comment3 = document.getElementById('comment');
 let Number = document.getElementById('number');
 let Button = document.getElementById('bttn');
+let Name = document.getElementById('name');
 
 
 function CountCharacter(){
@@ -23,9 +24,12 @@ Number.innerHTML = 'Number of characters:' + Comment2.value.length + '/140';
 function postComment()
 {
 var div = document.getElementById("c");
+var div2 = document.getElementById("n");
 event.preventDefault();
 div.innerHTML = div.innerHTML +"<br>"+ document.getElementById("comment").value;
+div2.innerHTML = div2.innerHTML +"<br>"+ document.getElementById("name").value;
 Comment3.value = "";
+Name.value = "";
 
 }
 

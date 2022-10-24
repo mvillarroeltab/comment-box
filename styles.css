@@ -37,9 +37,27 @@ hr {
   line-height: 2;
 }
 .your-comments {
+  width: 60%;
   text-align: left;
   line-height: 1;
 }
+.comment-row{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  padding: .5em;
+  min-width: 300px;
+  align-items: stretch;
+}
+.comment-name{
+  flex-grow: 2;
+    padding: 2em;
+}
+.comment-comment{
+  flex-grow: 3;
+    padding: 2em;
+}
+
 .form-wrapper {
     text-align: left;
     background-color: whitesmoke;
