@@ -31,25 +31,38 @@ hr {
   width: 5%;
 }
 
-label,
-input {
-  /* In order to define widths */
-  display: inline-block;
-label{
-   text-align: left;
-   width: 30%
-   margin: 0 30% 0 4%;
-}
-.form {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .contact-me {
   width: 50%;
   margin: 100px auto 100px;
   line-height: 2;
 }
+.form-wrapper {
+    background-color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+  }
+  .row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+  }
+  .row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+  }
+  .row > input {
+    flex: 2;
+  }
+  .row > input,
+  .row > button {
+    padding: .5em;
+  }
+  .row > button {
+   background: gray;
+   color: white;
+   border: 0;
+  }
 .bttn {
   outline: none;
   margin-top: 20PX;
