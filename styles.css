@@ -39,6 +39,7 @@ hr {
   line-height: 2;
 }
 .bttn {
+  outline: none;
   margin-top: 20PX;
   background: linear-gradient(to bottom, #5ebabd 5%, #409996 100%);
   background-color: #5ebabd;
