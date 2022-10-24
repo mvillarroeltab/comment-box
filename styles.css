@@ -30,9 +30,20 @@ hr {
   height: 1px;
   width: 5%;
 }
-.form{
-  text-align: left;
+form{
+  width: 80%;
+  margin: 0 auto;
 }
+label,
+input {
+  /* In order to define widths */
+  display: inline-block;
+label{
+   text-align: left;
+   width: 30%
+   margin: 0 30% 0 4%;
+}
+
 .contact-me {
   width: 50%;
   margin: 100px auto 100px;
@@ -52,7 +63,6 @@ hr {
   padding: 13px 32px;
   text-decoration: none;
   text-shadow: 0 1px 0 #3d768a;
-  align: center;
 }
 
 .bttn:hover {
