@@ -36,62 +36,80 @@ hr {
   margin: 100px auto 100px;
   line-height: 2;
 }
+
 .your-comments {
-  width: 60%;
+
   text-align: left;
   line-height: 1;
 }
-.comment-row{
+.comment-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: .5em;
+  width: 100%;
+  min-width: 300px;
+}
+.comment-row {
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
   padding: .5em;
+  width: 100%;
   min-width: 300px;
-  align-items: stretch;
 }
-.comment-name{
-  flex-grow: 2;
-    padding: 2em;
+
+.comment-name {
+  flex: 2;
+  padding: 10px;
 }
-.comment-comment{
-  flex-grow: 3;
-    padding: 2em;
+
+.comment-comment {
+  flex: 3;
+  padding: 10px;
 }
 
 .form-wrapper {
-    text-align: left;
-    background-color: whitesmoke;
-    list-style-type: none;
-    padding: 0;
-    border-radius: 3px;
-  }
+  text-align: left;
+  background-color: whitesmoke;
+  list-style-type: none;
+  padding: 0;
+  border-radius: 3px;
+}
+
 .row {
-    display: flex;
-    justify-content: center;
-    padding: .5em;
-  }
-.row > label {
-    padding: .5em 2em .5em 0;
-    flex: 1;
-  }
-.row > input {
-    flex: 2;
-  }
+  display: flex;
+  justify-content: center;
+  padding: .5em;
+}
+
+.row>label {
+  padding: .5em 2em .5em 0;
+  flex: 1;
+}
+
+.row>input {
+  flex: 2;
+}
 
 .row-count {
-      display: flex;
-      justify-content: flex-end;
-      margin: 1px auto 1px;
-      padding: 0;
-      line-height: 0.5;
-    }
-.row-count > p{
+  display: flex;
+  justify-content: flex-end;
+  margin: 1px auto 1px;
+  padding: 0;
+  line-height: 0.5;
+}
+
+.row-count>p {
   font-size: 75%;
 }
-.row > input,
-.row > button {
-    padding: .5em;
-  }
+
+.row>input,
+.row>button {
+  padding: .5em;
+}
+
 .redComment {
   color: red;
 }

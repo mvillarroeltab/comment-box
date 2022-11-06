@@ -1,3 +1,5 @@
+// Declare all the variables
+
 let Count = document.getElementById('count');
 let Comment = document.getElementById('comment');
 let Comment2 = document.getElementById('comment');
@@ -5,6 +7,7 @@ let Comment3 = document.getElementById('comment');
 let Number = document.getElementById('number');
 let Button = document.getElementById('bttn');
 let Name = document.getElementById('name');
+let Email = document.getElementById('email');
 
 
 function CountCharacter(){
@@ -23,13 +26,27 @@ Number.innerHTML = 'Number of characters:' + Comment2.value.length + '/140';
 
 function postComment()
 {
-var div = document.getElementById("c");
-var div2 = document.getElementById("n");
-event.preventDefault();
-div.innerHTML = div.innerHTML +"<br>"+ document.getElementById("comment").value;
-div2.innerHTML = div2.innerHTML +"<br>"+ document.getElementById("name").value;
-Comment3.value = "";
-Name.value = "";
+  var divComment = document.getElementById("comment-container");
+
+  event.preventDefault();
+
+  divComment.innerHTML +=
+  "<div class='comment-row'>"
+  +"<div class= 'comment-name' id = 'n'>"
+  + document.getElementById("name").value
+  + "</div>"
+  + "<div class= 'comment-comment' id = 'c'>"
+  + document.getElementById("comment").value
+  + "</div>"
+  +"</div>"
+  +"<br>";
+
+
+  Comment3.value = "";
+  Name.value = "";
+  Email.value = "";
+  Number.innerHTML = "";
+  Count.innerHTML = "";
 
 }
 
